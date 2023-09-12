@@ -1,0 +1,81 @@
+/* COMMON CSS STARTS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* COMMONN CSS ENDS */
+nav {
+  background-color: teal;
+}
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+nav ul li a {
+  display: inline-block;
+  padding: 25px 30px;
+  font-size: 16px;
+  font-family: "poppins", sans-serif;
+  color: white;
+  transition: 0.4s;
+}
+nav ul li a:hover {
+  color: black;
+  background-color: lightsteelblue;
+  font-size: 15px;
+}
+nav ul li ul li a {
+  font-size: 13px;
+  width: 100%;
+  display: block;
+  display: block;
+}
+nav ul li ul {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  top: 110%;
+  left: 10px;
+  border-top: 4px solid gold;
+  width: 120%;
+}
+nav ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  background-color: teal;
+  top: 100%;
+  left: 0px;
+}
+nav ul li ul li {
+  display: block;
+}
+nav ul li button {
+  margin-left: 350px;
+  color: white;
+  background-color: teal;
+  border: 1px solid white;
+  font-family: "poppins", sans-serif;
+  font-size: 12px;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+nav ul li button:hover {
+  color: black;
+  background-color: lightsteelblue;
+  padding: 10px 20px;
+  border: 0px solid;
+  border-radius: 30px;
+}
